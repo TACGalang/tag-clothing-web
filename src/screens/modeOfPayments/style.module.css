@@ -1,0 +1,112 @@
+.rootContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5vh;
+}
+
+.tagLogo {
+	object-fit: contain;
+	height: 15rem;
+	width: 15rem;
+}
+
+.header {
+	text-align: center;
+}
+
+.subHeader {
+	text-align: center;
+}
+
+.ctaContainer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 5vh;
+	gap: 1.5rem;
+}
+
+.button {
+	display: flex;
+	color: #004aad;
+	font-size: 2rem;
+}
+
+.paymentLogo {
+	object-fit: contain;
+	height: 8rem;
+	width: 8rem;
+}
+
+.buttonContainer {
+	display: flex;
+	background-color: white;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-left: 0.3rem;
+	padding-right: 1.5rem;
+	border-radius: 4rem;
+}
+
+.paymentName {
+	font-weight: 500;
+	display: flex;
+	color: #004aad;
+	font-size: 2rem;
+}
+
+.paymentNumber {
+	font-weight: normal;
+	display: flex;
+	color: #004aad;
+	font-size: 1.5rem;
+}
+
+.headerContent {
+	display: flex;
+	flex-direction: column;
+	height: 8rem;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+	.ctaContainer {
+		display: flex;
+		flex-direction: column;
+		padding-top: 5vh;
+		gap: 1.5rem;
+		width: 85%;
+	}
+
+	.paymentName {
+		font-weight: 500;
+		display: flex;
+		color: #004aad;
+		font-size: 1.2rem;
+	}
+
+	.paymentNumber {
+		font-weight: normal;
+		display: flex;
+		color: #004aad;
+		font-size: 1.5rem;
+	}
+
+	.paymentLogo {
+		object-fit: contain;
+		height: 5rem;
+		width: 5rem;
+	}
+
+	.headerContent {
+		display: flex;
+		flex-direction: column;
+		height: 5rem;
+		justify-content: center;
+		align-items: flex-start;
+		margin-left: 0.5rem;
+	}
+}

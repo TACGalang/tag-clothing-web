@@ -1,0 +1,55 @@
+.rootContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5vh;
+}
+
+.tagLogo {
+	object-fit: contain;
+	height: 15rem;
+	width: 15rem;
+}
+
+.header {
+	text-align: center;
+}
+
+.subHeader {
+	text-align: center;
+}
+
+.ctaContainer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 5vh;
+	gap: 1.5rem;
+}
+
+.button {
+	display: flex;
+	color: #004aad;
+}
+
+.buttonContainer {
+	display: flex;
+	height: 10vh;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	border-radius: 20rem;
+}
+
+@media screen and (max-width: 900px) {
+	.ctaContainer {
+		display: flex;
+		flex-direction: column;
+		padding-top: 5vh;
+		gap: 1.5rem;
+		width: 85%;
+	}
+}
