@@ -36,7 +36,7 @@
 	background-color: #004096;
 	border-radius: 1rem;
 	margin-top: 2rem;
-	padding: 2rem 1rem 1rem 1rem;
+	padding: 2rem 2rem 2rem 2rem;
 }
 
 .button {
@@ -126,8 +126,40 @@
 	margin-top: 10vh;
 	display: flex;
 	justify-content: flex-end;
-	width: 100%;
 	cursor: pointer;
+}
+
+.linksContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5vh;
+	width: 100%;
+}
+
+.checkoutLinkContainer {
+	display: flex;
+	background-color: white;
+	border-radius: 10rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	width: fit-content;
+	height: fit-content;
+	cursor: pointer;
+}
+
+.checkoutLinkText {
+	color: #004096;
+	text-align: center;
+	letter-spacing: -0.1rem;
+	margin: 0rem 0rem 0rem 0rem;
+}
+
+.checkoutLinkRootContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -146,7 +178,7 @@
 		background-color: #004096;
 		border-radius: 1rem;
 		margin-top: 2rem;
-		padding: 2rem 1rem 1rem 1rem;
+		padding: 2rem 2rem 2rem 2rem;
 	}
 
 	.paymentName {

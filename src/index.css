@@ -38,6 +38,15 @@ h3 {
 	margin: 0 0 0 0;
 }
 
+u {
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.4rem;
+	color: white;
+	margin: 0 0 0 0;
+}
+
 @media screen and (max-width: 900px) {
 	h1 {
 		font-family: "Crafty Girls", cursive;
@@ -61,6 +70,15 @@ h3 {
 		font-weight: 300;
 		font-style: normal;
 		font-size: 1.5rem;
+		color: white;
+		margin: 0 0 0 0;
+	}
+
+	u {
+		font-family: "Helvetica Neue";
+		font-weight: 300;
+		font-style: normal;
+		font-size: 1rem;
 		color: white;
 		margin: 0 0 0 0;
 	}

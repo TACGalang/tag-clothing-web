@@ -28,6 +28,12 @@ const Home = () => {
 				>
 					<h2 className={styles.button}>Mode of Payments</h2>
 				</div>
+				<div
+					className={styles.buttonContainer}
+					onClick={() => navigate("checkoutLinks")}
+				>
+					<h2 className={styles.button}>Checkout Links</h2>
+				</div>
 			</div>
 		</div>
 	);

@@ -14,16 +14,17 @@ import styles from "./style.module.css";
 const PaymentMethod: React.FC<{
 	name: string;
 	number: string;
+	accountNumber: string;
 	logo: string;
 	qr: string;
-}> = ({ name, number, logo, qr }) => {
+}> = ({ name, number, accountNumber, logo, qr }) => {
 	const [isExpanded, setExpanded] = useState<boolean>(false);
 
 	return (
 		<div
 			className={styles.buttonContainer}
 			onClick={() => {
-				navigator?.clipboard?.writeText(number);
+				navigator?.clipboard?.writeText(accountNumber);
 				setExpanded(!isExpanded);
 			}}
 		>
@@ -63,22 +64,29 @@ const ModeOfPayment = () => {
 			<div>
 				<h1 className={styles.header}>Mode Of Payments</h1>
 			</div>
+
 			<div className={styles.ctaContainer}>
+				<p className={styles.instruction}>
+					Click the payment method to copy the account number and show its QR
+				</p>
 				<PaymentMethod
 					name="FLORDELIZA TEODORO"
 					number="(0917) 174 8405"
+					accountNumber="09171748405"
 					logo={gCashLogo}
 					qr={gCashQR}
 				/>
 				<PaymentMethod
 					name="FLORDELIZA TEODORO"
 					number="9579179152"
+					accountNumber="9579179152"
 					logo={bpi}
 					qr={bpiQR}
 				/>
 				<PaymentMethod
 					name="FLORDELIZA GALANG"
 					number="005640391880"
+					accountNumber="005640391880"
 					logo={bdo}
 					qr={bdoQR}
 				/>
@@ -88,6 +96,17 @@ const ModeOfPayment = () => {
 					<p className={styles.notesWhite}>
 						please send us your proof of payment
 					</p>
+				</div>
+				<div className={styles.linksContainer}>
+					<div className={styles.links} onClick={() => navigate("/howToOrder")}>
+						<u>← How To Order</u>
+					</div>
+					<div
+						className={styles.links}
+						onClick={() => navigate("/checkoutLinks")}
+					>
+						<u>Checkout Links →</u>
+					</div>
 				</div>
 			</div>
 		</div>

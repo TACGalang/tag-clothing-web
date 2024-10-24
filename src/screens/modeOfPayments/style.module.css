@@ -109,6 +109,23 @@
 	align-items: flex-start;
 }
 
+.linksContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5vh;
+}
+
+.links {
+	cursor: pointer;
+}
+
+.instruction {
+	text-align: center;
+	color: white;
+}
+
 @media screen and (max-width: 900px) {
 	.ctaContainer {
 		display: flex;
