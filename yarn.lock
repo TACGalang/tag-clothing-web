@@ -7837,6 +7837,11 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
+react-copy-to-clipboard-component@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard-component/-/react-copy-to-clipboard-component-1.0.6.tgz#2a72f445ed526caec837f6012a2faac06db6b8db"
+  integrity sha512-BgeritE/TX2i4EkVnpSHEzQbyRaINtjzXmhlCD/hpbnWsRPAH01C6Csu3hN73ZmJEVoSFgU6YN0w5bO/87tUqw==
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.1.tgz#ba92edb4a1f379bd46ccd6bcd4e7bc398df33e73"

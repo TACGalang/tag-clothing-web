@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	padding-top: 5vh;
-	padding-bottom: 5vh;
+	padding-bottom: 10vh;
 }
 
 .tagLogo {
@@ -17,17 +17,22 @@
 
 .header {
 	text-align: center;
+	letter-spacing: -0.1rem;
 }
 
 .subHeader {
-	text-align: center;
+	font-size: 1.4rem;
 }
 
 .ctaContainer {
 	display: flex;
 	flex-direction: column;
-	padding-top: 5vh;
+	padding: 2rem 1rem 1rem 1rem;
+
 	gap: 1.5rem;
+	background-color: #004096;
+	border-radius: 1rem;
+	margin-top: 2rem;
 }
 
 .button {
@@ -44,12 +49,10 @@
 
 .buttonContainer {
 	display: flex;
-	flex-direction: column;
-	background-color: white;
+	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
-	border-radius: 3rem;
-	cursor: pointer;
+	gap: 0.5rem;
 }
 
 .headerContainer {
@@ -109,11 +112,17 @@
 	align-items: flex-start;
 }
 
+.bullet {
+	object-fit: contain;
+	height: 3rem;
+	width: 3rem;
+}
+
 @media screen and (max-width: 900px) {
 	.ctaContainer {
 		display: flex;
 		flex-direction: column;
-		padding-top: 5vh;
+		padding: 2rem 1rem 1rem 1rem;
 		gap: 1.5rem;
 		width: 85%;
 	}
@@ -145,5 +154,12 @@
 		justify-content: center;
 		align-items: flex-start;
 		margin-left: 0.5rem;
+	}
+
+	.qrImage {
+		object-fit: contain;
+		height: 40vh;
+		width: 100%;
+		margin-bottom: 1rem;
 	}
 }

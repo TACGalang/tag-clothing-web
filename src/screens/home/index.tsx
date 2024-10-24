@@ -10,12 +10,16 @@ const Home = () => {
 	return (
 		<div className={styles.rootContainer}>
 			<img src={tagLogo} alt="TAG Clothing Logo" className={styles.tagLogo} />
+
 			<div>
 				{/* <h1 className={styles.header}>Welcome</h1> */}
 				<h3 className={styles.subHeader}>What would you like to know?</h3>
 			</div>
 			<div className={styles.ctaContainer}>
-				<div className={styles.buttonContainer}>
+				<div
+					className={styles.buttonContainer}
+					onClick={() => navigate("howToOrder")}
+				>
 					<h2 className={styles.button}>How to Order?</h2>
 				</div>
 				<div

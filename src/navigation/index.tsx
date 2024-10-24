@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "../screens/home";
 import ModeOfPayment from "../screens/modeOfPayments";
+import HowToOrder from "../screens/howToOrder";
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
 			{
 				path: "modeOfPayments/",
 				element: <ModeOfPayment />,
+			},
+			{
+				path: "howToOrder/",
+				element: <HowToOrder />,
 			},
 		],
 	},

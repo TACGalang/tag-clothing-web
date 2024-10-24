@@ -31,17 +31,19 @@
 .button {
 	display: flex;
 	color: #004aad;
+	text-align: center;
+	letter-spacing: -0.1rem;
 }
 
 .buttonContainer {
 	display: flex;
-	height: 10vh;
 	background-color: white;
 	align-items: center;
 	justify-content: center;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	border-radius: 20rem;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
