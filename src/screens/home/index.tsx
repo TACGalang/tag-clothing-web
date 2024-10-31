@@ -9,7 +9,12 @@ const Home = () => {
 
 	return (
 		<div className={styles.rootContainer}>
-			<img src={tagLogo} alt="TAG Clothing Logo" className={styles.tagLogo} />
+			<img
+				src={tagLogo}
+				alt="TAG Clothing Logo"
+				className={styles.tagLogo}
+				onClick={() => navigate("/")}
+			/>
 
 			<div>
 				{/* <h1 className={styles.header}>Welcome</h1> */}
@@ -18,19 +23,19 @@ const Home = () => {
 			<div className={styles.ctaContainer}>
 				<div
 					className={styles.buttonContainer}
-					onClick={() => navigate("howToOrder")}
+					onClick={() => navigate("/howToOrder")}
 				>
 					<h2 className={styles.button}>How to Order?</h2>
 				</div>
 				<div
 					className={styles.buttonContainer}
-					onClick={() => navigate("modeOfPayments")}
+					onClick={() => navigate("/modeOfPayments")}
 				>
 					<h2 className={styles.button}>Mode of Payments</h2>
 				</div>
 				<div
 					className={styles.buttonContainer}
-					onClick={() => navigate("checkoutLinks")}
+					onClick={() => navigate("/checkoutLinks")}
 				>
 					<h2 className={styles.button}>Checkout Links</h2>
 				</div>

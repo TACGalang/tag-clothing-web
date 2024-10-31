@@ -3,6 +3,7 @@ import Home from "../screens/home";
 import ModeOfPayment from "../screens/modeOfPayments";
 import HowToOrder from "../screens/howToOrder";
 import CheckoutLinks from "../screens/checkoutLinks";
+import Menu from "../screens/menus";
 
 const router = createBrowserRouter([
 	{
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
+				element: <Menu />,
+			},
+			{
+				path: "instructions/",
 				element: <Home />,
 			},
 			{

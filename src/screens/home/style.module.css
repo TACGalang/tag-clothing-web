@@ -11,6 +11,7 @@
 	object-fit: contain;
 	height: 15rem;
 	width: 15rem;
+	cursor: pointer;
 }
 
 .header {

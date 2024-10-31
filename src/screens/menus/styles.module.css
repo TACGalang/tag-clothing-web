@@ -1,0 +1,68 @@
+.rootContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
+.tagLogo {
+	object-fit: contain;
+	height: 15rem;
+	width: 15rem;
+}
+
+.headerContainer {
+	display: flex;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.headerText {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.menuContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10vh;
+	gap: 20%;
+}
+
+.icon {
+	height: 3.5rem;
+	width: 3.5rem;
+	object-fit: contain;
+	filter: sepia(1) saturate(20) hue-rotate(200deg) brightness(1);
+}
+
+.iconContainer {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 5rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.buttonContainer :active {
+	transform: scale(0.9);
+}
+
+.buttonText {
+	font-size: x-large;
+	text-align: center;
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
